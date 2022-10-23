@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+    <Page Remove="bin\**" />
+    <Page Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Res\favicon_created_by_logaster.ico" />
+    <None Remove="Res\l.png" />
+    <None Remove="Res\Reg.png" />
+    <None Remove="Res\Screenshot_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Res\favicon_created_by_logaster.ico" />
+    <Resource Include="Res\l.png" />
+    <Resource Include="Res\Reg.png" />
+    <Resource Include="Res\Screenshot_1.png" />
+  </ItemGroup>
+
+</Project>
